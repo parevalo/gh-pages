@@ -12,11 +12,11 @@ safe: true
 
 # edit here to achieve your personal greatness
 url: http://parevalo.github.io/
-baseurl: /sustain/
+baseurl: /parevalo.github.io/
 title: Paulo Arévalo
 author: Paulo Arévalo
 description: Personal info and resume
-avatar: profile.png
+avatar: profile.jpg
 email: parevalo@bu.edu
 github: parevalo
 linkedin: arevalopaulo
