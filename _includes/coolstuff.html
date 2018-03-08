@@ -4,19 +4,41 @@
   <div class="panel panel-default">
     <div class="panel-body">
 		<h5>	
-			- Time series of Landsat data can capture some land dynamics that would be missed if we 
+			1) Sand deposition and plant establishment: 
+            Time series of Landsat data can capture some land dynamics that would be missed if we 
             only analyzed individual images at a time. Here we can see how seasonal flooding and drying
             of a river margin ends up in enough sand deposition that the flooding stops over time. 
-            Eventually vegetation starts to grow.
-        <img src="{{ site.baseurl }}static/img/water_to_sand_TS.png"> 
-		</h5>
-	    <h5>	
-			- Add regrowth example with map
-        </h5>
+            Eventually vegetation starts to grow. Timeseries shows the first short wave infrared band.
         <h5>
-            - Add amplitude of flooding image
-		</h5>	
-		
+        <img class="img-fit"  src="{{ site.baseurl }}static/img/water_to_sand_TS.png"> 
+	</div>    
+    <div class="panel-body">	
+        <h5>    		
+        	2) Vegetation regrowth in the Colombian Amazon:
+            The slopes of the fitted segments in the time series can be mapped to reveal areas of
+            regrowing vegetation. The RGB combination shows the slopes of the SWIR1 (Red), 
+            NIR (Green), and SWIR2 (Blue) for segments intersecting the year 2010. A two standard 
+            deviations stretch was applied to enhance the contrast. Vegetation regrowth appears 
+            bright green due to negative slopes in the SWIR bands, and positive in the NIR. 
+            The panel at the bottom shows the SWIR1 time series for an example pixel with 
+            ongoing forest regeneration, and is marked with a crossmark in the image. 
+        </h5>
+        <img class="img-fit"  src="{{ site.baseurl }}static/img/regrowth_slope_map.jpeg"> 
+    </div> 
+    <div class="panel-body">   
+        <h5>
+            3) Flooding in the Colombian Amazon: 
+            Amplitudes of the sinusoid in the time series segments 
+            can be used to reveal areas with seasonal 
+            flooding, like this areas in the Eastern Colombian Amazon. The RGB combination shows 
+            the annual amplitudes of the NIR (Red), SWIR1 (Green), and Red (Blue) bands. 
+            A two standard deviations stretch was applied to enhance the contrast. Locations 
+            with clear seasonal flooding events appear white and yellow in the image. 
+            Many of these places correspond to natural grasslands and appear as light green. 
+            The panel at the bottom shows the SWIR1 time series for an example pixel marked 
+            with a crossmark in the image.
+		</h5>
+        <img class="img-fit"  src="{{ site.baseurl }}static/img/flooding_amplitude_map.jpeg">      
     </div>
   </div>
 </div>
