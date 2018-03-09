@@ -2,25 +2,92 @@
 <div class="container">
   <h3>Research</h3>
   <div class="panel panel-default">
+    <div>
+        <h5>
+        Tropical deforestation and forest degradation are significant sources of carbon emissions to the
+        atmosphere. The REDD+ mechanism was established to reduce those emissions by means of 
+        economic compensation to countries that can demonstrate decreasing rates of deforestation. 
+        In order for initiativates like this to be successful, it is necessary to build systems that
+        provide credible evidence of a reduction in the activities that release carbon to the
+        atmosphere. My research involves the use and development of techniques that allow a
+        better characterization of the land surface and carbon dynamics, particularly in the tropics. 
+        <a href="https://github.com/ceholden/yatsm">Time series analysis</a> and statistical estimation 
+        approaches <a href="https://doi.org/10.1016/j.rse.2014.02.015">(Olofsson et al. 2014)</a> are 
+        used jointly, and their application tested in the Colombian Amazon. More details can be found below.
+        Figure 1 shows an overview of the study area and the changes between 2001 and 2016.
+        </h5>
+    </div>
+    <div class="panel-body">
+	    <img class="img-fit" src="{{ site.baseurl }}static/img/study_area_qgis.png">	
+		<h5>
+        <b>Figure 1.</b>  Study area and map strata used for the stratified sampling. Inset A
+        shows and area of active conversion from forest to pasture. Inset B shows an area with
+        prevalence of short disturbances followed by forest regrowth. 
+        </h5>
+    </div>  
+
+
+    
     <div class="panel-body">
 		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/parevalo/workflow">Area estimation</a></strong>
-			- This project aims at estimating areas of land cover change in the Colombian Amazon between 2001 to the present. This is done using time series of Landsat data to detect the changes and create temporally consistent maps of stable and change classes. These maps are in turn used as the basis for a stratified sampling, for which reference data are collected. Reference and map labels are used to apply unbiased estimators of area that yield values of area with 95% confidence intervals. 
+    	<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/parevalo/workflow">Land area estimation</a></strong>
+		- This repository shows the workflow used to estimate areas of land cover change in 
+        the Colombian Amazon between 2001 to the present. This was done using time series of Landsat 
+        data to detect the changes and create temporally consistent maps of stable and change classes. 
+        These maps were in turn used as the basis for a stratified sampling, for which reference data 
+        were collected. Reference and map labels were used to apply unbiased estimators of area that 
+        yield values of area with 95% confidence intervals for biannual periods. An example
+        of the resulting areas can be seen in Figure 2. 
 		</h5>
-		
+    </div>
+
+    <div class="panel-body">
+	    <img class="img-fit" src="{{ site.baseurl }}static/img/forest_to_regrowth_areas.png">	
 		<h5>
-			<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Spatial error</a></strong>
-			- Reference samples allow us to estimate accuracies and errors that apply for the entire population (e.g. a map class). However, estimating the errors associated with the classification of individual pixels is not a straightforward task. Classification probabilities calculated by any classification algorithm (e.g. RandomForest) do not necessarilly tell us about the degree of "correctness" of that pixel. This project aims at solving that problem by testing multiple alternatives to spatialized the map errors using point reference samples. This project is currently in progress. 
-			
-		</h5>
+        <b>Figure 2.</b>  Biannual area estimates with 95% confidence intervals (dashed lines) 
+        for the <i>Forest to Secondary Forest</i> class calculated using reference samples. 
+        Cross markers represent values that are statistically different from zero 
+        (i.e. confidence interval does not include zero). 
+        The red continuous line represent mapped areas. Years represent the middle of each biannual
+        period for visualization purposes. 
+        </h5>
+    </div>  
 
+    <div class="panel-body">
+        <h5>
+		<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Spatial error</a></strong>
+		- Reference samples allow us to estimate accuracies and errors that apply for the entire 
+        population (e.g. a map class). However, estimating the errors associated with the classification 
+        of individual pixels is not a straightforward task. Classification probabilities calculated 
+        by any classification algorithm (e.g. RandomForest) do not necessarilly tell us about the 
+        degree of "correctness" of that pixel. This project aims at solving that problem by testing 
+        multiple alternatives to spatialized the map errors using point reference samples. 
+        An example of the first attempts to accomplish this are shown in Figure 3.
+        This project is currently in progress. 
+		</h5>
+    </div>
+    
+    <div class="panel-body">
+	    <img class="img-fit" src="{{ site.baseurl }}static/img/interpolation_example.png">	
 		<h5>
-			<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Carbon bookkeeping model</a></strong>
-			- Dense time series of Landsat observations can be used in conjunction with field plot data, carbon stock maps and other input data to estimate the carbon dynamics at a Landsat pixel level. This project aims at building a model that takes these inputs and translates them into rates and values of carbon emission and sequestration, estimating its uncertainty. This work is currently in progress. 
-			
+        <b>Figure 3.</b> Interpolation of agreement or disagreement (1 o 0) between reference
+        and map data as detailed in 
+        <a href="https://doi.org/10.1016/j.rse.2017.01.025">Khatami et al. (2017)</a>
+        can be used to obtain a measure of map error or accuracy at the pixel level. This simple
+        approach is shown here, after being applied to each map class and merging the resulting map, 
+        in a small section of the Colombian Amazon. 
+        </h5>
+    </div> 
+    
+    <div class="panel-body">
+		<h5>
+		<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Carbon bookkeeping model</a></strong>
+	    - Dense time series of Landsat observations can be used in conjunction with field plot data, 
+        carbon stock maps and other input data to estimate the carbon dynamics at a Landsat pixel level. 
+        This project aims at building a model that takes these inputs and translates them into rates 
+        and values of carbon emission and sequestration, estimating its uncertainty. 
+        This work is currently in progress. 
 		</h5>
-
-
     </div>
   </div>
 </div>

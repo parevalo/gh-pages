@@ -4,21 +4,9 @@ hosted in [Github pages](https://pages.github.com/).
 Adapted from the [sustain template](https://github.com/jekyller/sustain).
 
 
-## How to use it
-
-Simply clone/fork this repository, and then run `jekyll serve` inside the directory.
-Edit the site attributes in *_config.yml* and edit the various entries in *_includes/* and *_posts/*.
-
-
 ## Issues and contributing
 
 I have tested this install with Ruby v2.4.1 (Ubuntu 16.04 RVM) and Jekyll v3.6.2.
-
-
-dd#### Contributors
-
-[Sumit Murari](https://github.com/murarisumit), November 2015
-
 
 
 ## Copyright & License
@@ -31,4 +19,3 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
 NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
->>>>>>> sustain/gh-pages
