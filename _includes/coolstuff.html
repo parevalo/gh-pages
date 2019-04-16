@@ -4,7 +4,18 @@
   <div class="panel panel-default">
     <div class="panel-body">
 		<h5>	
-			<b>1) Sand deposition and plant establishment:</b> 
+			<b>1) Time series online:</b> 
+            A repo that uses Google Earth Engine, bqplot, ipyleaftlet in a jupyter 
+            notebook to visualize time series of Landsat data, the images and 
+            the results of runnint the break detection algorithm 'pyccd' on them.
+            The code can be found <a href="https://github.com/parevalo/tstools-online">here</a>.
+
+        <h5>
+        <img class="img-fit"  src="{{ site.baseurl }}static/img/tstools_online.png"> 
+	</div>
+    <div class="panel-body">
+		<h5>	
+			<b>2) Sand deposition and plant establishment:</b> 
             Time series of Landsat data can capture some land dynamics that would be missed if we 
             only analyzed individual images at a time. Here we can see how seasonal flooding and drying
             of a river margin ends up in enough sand deposition that the flooding stops over time. 
@@ -14,7 +25,7 @@
 	</div>    
     <div class="panel-body">	
         <h5>    		
-        	<b>2) Vegetation regrowth in the Colombian Amazon:</b>
+        	<b>3) Vegetation regrowth in the Colombian Amazon:</b>
             The slopes of the fitted segments in the time series can be mapped to reveal areas of
             regrowing vegetation. The RGB combination shows the slopes of the SWIR1 (Red), 
             NIR (Green), and SWIR2 (Blue) for segments intersecting the year 2010. A two standard 
@@ -27,7 +38,7 @@
     </div> 
     <div class="panel-body">   
         <h5>
-            <b>3) Flooding in the Colombian Amazon:</b>
+            <b>4) Flooding in the Colombian Amazon:</b>
             Amplitudes of the sinusoid in the time series segments 
             can be used to reveal areas with seasonal 
             flooding, like this areas in the Eastern Colombian Amazon. The RGB combination shows 
