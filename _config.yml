@@ -11,8 +11,8 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://parevalo.github.io/
-baseurl: /parevalo.github.io/
+url: https://parevalo.github.io/
+baseurl: 
 title: Paulo Arévalo
 author: Paulo Arévalo
 description: Personal info and resume
